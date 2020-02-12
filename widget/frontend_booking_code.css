@@ -1,0 +1,578 @@
+/* --Login In Sign Up Style Starts Here-- */
+
+#registration_wrapper .col-md-8 {
+	background: #fff;
+}
+#registration_wrapper {
+	background: #1d1d1d;
+	width: auto;
+	box-shadow: 0 4px 32px 0 rgba(0,0,0,0.08);
+}
+#login h2 {
+	color: #f8f8f8 !important;
+}
+#registration_wrapper input[type="text"], #registration_wrapper input[type="email"], #registration_wrapper input[type="email"], #registration_wrapper input[type="password"] {
+	width: 100%;
+	border-radius: 0;
+	background: transparent;
+	border: 1px solid #ccc;
+	font-size: 14px;
+	padding: 10px;
+	height: 50px;
+	font-weight: 400;
+}
+#registration_wrapper .col-md-4, #registration_wrapper .col-md-8 {
+	padding: 30px;
+}
+#registration_wrapper .col-md-4{
+    padding-top: 4%;
+}
+#target {
+	padding-top: 15px;
+}
+#register h2 {
+	margin-top: 0;
+}
+
+
+#login img {
+	width: 30%;
+}
+
+/* --Login In Sign Up Style Ends Here-- */
+
+#emp_data_list .col-md-4 {
+	min-width: 150px;
+	min-height: 100px;
+	max-height: 100px;
+}
+.col-md-4.portfolio_img img {
+    border-radius: 100%;
+	width: 40%;
+}
+
+/* --Select Service Style Ends Here-- */
+
+#service_wrapper{
+	background: #f4f7fe;
+	padding: 50px;
+	position: relative;
+
+float: right;
+	
+}
+ #checkout_wrapper {
+	
+	padding: 40px 50px 20px;
+	float:right;
+	
+}
+.open .fa.fa-chevron-down::before {
+	color: #fff;
+}
+#service_wrapper .btn-left {
+	float: right;
+	margin-top: 20px;
+	background: #333;
+	color: #fff;
+	border-color: #333;
+	font-size: 12px;
+	font-family: roboto;
+	text-transform: uppercase;
+	font-weight: 600;
+	letter-spacing: 0.5px;
+	padding: 10px 22px;
+}
+
+
+#accordion input[type="checkbox"] {	margin-right: 10px;}
+
+#service_wrapper h2, #checkout_wrapper h2, #select_emp h2, #time_date_wrapper h2 {
+    color:#333 !important;
+    font-family: Roboto !important;
+    font-weight: 500 !important;
+    font-size: 20px !important;
+    text-align: left;
+    margin-top: 0;
+    border-bottom: 1px dotted rgba(0,0,0,0.5);
+    padding-bottom: 15px;
+}
+
+#accordion, .emp_data {list-style-type: none; margin-top: 40px;}
+
+#accordion{list-style-type: none;}
+
+.accordion {
+	width: 100%;
+	max-width: 100%;
+	margin: 0 auto;
+	background: #2c2c2c;
+	-webkit-border-radius: 4px;
+	-moz-border-radius: 4px;
+	
+}
+
+#accordion .fa-chevron-down {
+    transform: rotate(180deg);
+}
+.open .fa-chevron-down {
+	transform: rotate(0deg) !important;
+	transition: all 0.3s ease;
+}
+
+.accordion .link {
+	cursor: pointer;
+	display: block;
+	padding: 15px 15px 15px 42px;
+	color: #fff;
+	font-size: 14px;
+	font-weight: 700;
+	border-bottom: 1px solid rgba(255,255,225,0.2);
+	position: relative;
+	-webkit-transition: all 0.4s ease;
+	-o-transition: all 0.4s ease;
+	transition: all 0.4s ease;
+	text-align: left;
+	background: #3eb1e1;
+}
+#service_wrapper p {
+	color: #fff !important;
+	font-size: 18px;
+	letter-spacing: 1px;
+	font-weight: 200;
+}
+
+
+.accordion li:last-child .link { border-bottom: 0; }
+
+.accordion li i {
+  position: absolute;
+  top: 16px;
+  left: 12px;
+  font-size: 18px;
+  color: #595959;
+  -webkit-transition: all 0.4s ease;
+  -o-transition: all 0.4s ease;
+  transition: all 0.4s ease;
+}
+
+.accordion li i.fa-chevron-down {
+  right: 12px;
+  left: auto;
+  font-size: 16px;
+}
+
+.accordion li.open .link { color: #f8f8f8; }
+
+.accordion li.open i { color: #f8f8f8; }
+
+.accordion li.open i.fa-chevron-down {
+  -webkit-transform: rotate(180deg);
+  -ms-transform: rotate(180deg);
+  -o-transform: rotate(180deg);
+  transform: rotate(180deg);
+}
+
+/**
+ * Submenu
+ -----------------------------*/
+
+
+.submenu {
+	display: none;
+	background: #fff;
+	font-size: 14px;
+	text-align: left;
+	list-style-type: none;
+	font-weight: 400;
+	padding-bottom: 20px !important;
+	padding-top: 20px !important;
+}
+.submenu li {
+	padding-left: 15px;
+	line-height: 30px;
+	text-transform: capitalize;
+}
+.submenu a {
+  display: block;
+  text-decoration: none;
+  color: #d9d9d9;
+  padding: 12px;
+  padding-left: 42px;
+  -webkit-transition: all 0.25s ease;
+  -o-transition: all 0.25s ease;
+  transition: all 0.25s ease;
+}
+
+.submenu a:hover {
+  background: #b63b4d;
+  color: #FFF;
+}
+
+#service_wrapper .open {
+	background: #3eb1e1;
+	box-shadow: 0 0 20px 0 rgba(0, 0, 0, 0.3);
+}
+
+#service_wrapper .pretty input:checked ~ .state.p-warning-o label::before, .pretty.p-toggle .state.p-warning-o label::before {
+	border-color: #3eb1e1;
+}
+
+#service_wrapper .pretty.p-default:not(.p-fill) input:checked ~ .state.p-warning-o label::after {
+	background-color: #3eb1e1 !important;
+}
+
+
+/* Select Employee Section Starts Here */
+
+#select_emp{padding:50px; float: right;}
+
+
+#select_emp .form-check {
+	vertical-align: middle;
+    display: inline-flex;
+    width: 100%;
+    background:#f8f8f8;
+    padding: 20px;
+    border: 1px dashed rgba(0,0,0,0.2);
+}
+
+
+#select_emp .name_col{
+    
+    	border-left: 1px dashed rgba(0,0,0,0.2);
+    	padding-top:5%;
+
+}
+#select_emp .col-md-12 {
+	padding-top: 30px;
+}
+
+
+/* Select Employee Section Ends Here */
+
+/* Date time Section Starts Here */
+
+#time_date_wrapper {
+	background: #f8f8f8;
+	padding: 50px;
+	float: right;
+}
+
+#time_date_wrapper input[type="date"] {
+	width: 100%;
+	border-radius: 0;
+	background: transparent;
+	border: 1px solid #ccc;
+	font-size: 14px;
+	padding-left: 10px;
+	height: 50px;
+	font-weight: 400;
+}
+#time_date_wrapper h4 {
+	color: #000 !important;
+	text-align: left;
+	font-size: 20px !important;
+	margin-bottom: 10px !important;
+	margin-top: 0;
+}
+#time_date_wrapper h5 {
+	text-align: left;
+	font-size: 16px !important;
+	margin-top: 5px;
+	font-family: roboto !important;
+}
+.time_wrap {
+	list-style-type: none;
+	text-align: left;
+}
+.time_wrap input[type="checkbox"] {
+	margin-right: 10px;
+}
+.time_col {
+	padding: 12px 15px !important;
+	color: #000;
+	font-weight: 400;
+	text-align: left;
+}
+
+/* Date time Section Ends Here */
+
+/* Checkout Section Starts Here */
+
+#checkout_wrapper input[type="text"], #checkout_wrapper input[type="email"], #checkout_wrapper input[type="date"], #checkout_wrapper input[type="tel"] {
+	background:transparent;
+    color:#000;
+    border: 1px solid #ccc;
+    border-radius: 0;
+    font-size: 14px;
+    padding: 10px;
+    height: 50px;
+    width: 100%;
+    margin-bottom: 15px;
+    font-weight: 400;
+}
+.left_align {
+	text-align: left;
+	width: 100%;
+	margin: 5px 0 6px;
+	color: #222;
+	font-weight: 500;
+	letter-spacing: 0.3px;
+}
+#checkout_wrapper .form-check {
+	text-align: left;
+	margin-bottom: 15px;
+}
+#checkout_wrapper .form-check label {
+	color: #222;
+	margin-right: 15px;
+	font-size: 13px;
+	font-weight: 400;
+}
+
+#time_date_wrapper .pretty {
+	width: 100%;
+	margin-top: 10px;
+}
+
+
+
+/* Button Style starts Here */
+
+.button--rayen {
+	overflow: hidden;
+	padding: 0;
+	width: auto;
+}
+.button--rayen.button--inverted {
+	color: #fff;
+}
+.button--rayen::before {
+	content: attr(data-text);
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	background: #3eb1e1;
+	-webkit-transform: translate3d(-100%, 0, 0);
+	transform: translate3d(-100%, 0, 0);
+	color: #fff;
+}
+.button--rayen.button--inverted::before {
+	background: #fff;
+	color: #37474f;
+}
+.button--rayen > span {
+	display: block;
+}
+.button--rayen::before,
+.button--rayen > span {
+	padding: 1em 2em;
+	-webkit-transition: -webkit-transform 0.3s;
+	transition: transform 0.3s;
+	-webkit-transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+	transition-timing-function: cubic-bezier(0.75, 0, 0.125, 1);
+}
+.button--rayen:hover::before {
+	-webkit-transform: translate3d(0, 0, 0);
+	transform: translate3d(0, 0, 0);
+}
+.button--rayen:hover > span {
+	-webkit-transform: translate3d(0, 100%, 0);
+	transform: translate3d(0, 100%, 0);
+}
+*:after,
+*:before {
+	-webkit-box-sizing: border-box;
+	box-sizing: border-box;
+}
+
+a {
+	color: #7986cb;
+	text-decoration: none;
+	outline: none;
+}
+a:hover,
+a:focus {
+	color: #3f51b5;
+	text-decoration: none !important;
+}
+
+
+/* Common button styles */
+.button {
+	min-width: 150px;
+    max-width: 150px;
+	display: block;
+	margin: 1em auto;
+	border: none;
+	background: none;
+	color: inherit;
+	vertical-align: middle;
+	position: relative;
+	z-index: 1;
+	-webkit-backface-visibility: hidden;
+	-moz-osx-font-smoothing: grayscale;
+}
+.button:focus {
+	outline: none;
+}
+.button > span {
+	vertical-align: middle;
+}
+
+/* Text color adjustments (we could stick to the "inherit" but that does not work well in Safari) */
+.button {
+	color: #37474f;
+	border-color: #37474f;
+}
+
+/* Sizes */
+.button--size-s {
+	font-size: 14px;
+}
+
+/* Typography and Roundedness */
+.button--text-upper {
+	letter-spacing: 2px;
+	text-transform: uppercase;
+}
+
+.button--text-thick {
+	font-weight: 600;
+}
+
+/* Borders */
+.button--border-thin {
+	border: 1px solid;
+}
+
+
+.button:hover {
+	border-color: #3eb1e1;
+}
+/* Checkout Section Ends Here */
+
+
+.col-md-4.left_col img {
+	width: 40%;
+	transform: translate(0%, 100%);
+	background: #000;
+	border-radius: 100px;
+	box-shadow: 0 4px 16px 0 rgba(255,255,255,0.2);
+	padding: 10px;
+}
+.col-md-4.left_col {
+	background-image: url(https://pssoftgroup.com/demo/duda/uploads/employee_profile/bg.jpg);
+	background-repeat: repeat;
+	height: 100vh;
+	position: fixed;
+	width: 33.333%;
+	float: left;
+	left: 0;
+	top: 0;
+	padding-top: 6%;
+
+}
+.right_btn{float: right;}
+.left_btn{float: left;}
+#checkout_wrapper button {
+	padding: 14px !important;
+}
+.progressbar {
+	position: absolute;
+	width: 100%;
+	top: 0px;
+	left: 0;
+	margin: 0 auto;
+	border: none !important;
+	background: #e9e9e9 !important;
+	height: 8px !important;
+
+}
+.ui-progressbar-value {
+	border: none !important;
+	background: #3eb1e1 !important;
+	border-radius: 0 !important;
+}
+.ui-corner-all, .ui-corner-bottom, .ui-corner-right, .ui-corner-br {
+	border-radius: 0 !important;
+}
+#message {
+    display:none;
+	float: right;
+	background-image: url(https://pssoftgroup.com/demo/duda/uploads/employee_profile/bg_confirm.jpg);
+	padding: 50px;
+	height: 70vh;
+
+}
+#datepicker .ui-datepicker {
+	width: 100%;
+	height:350px;
+	
+}
+#message img {
+	width: 15%;
+}
+#message h2 {
+	font-size: 44px !important;
+}
+#message p {
+	font-size: 15px;
+	font-weight: 500;
+	line-height: 30px;
+	margin-bottom: 30px;
+}
+.error_form{
+    display:none;
+}
+.default_assist .form-check-label {
+	padding-left: 40px;
+	padding-top: 6px;
+	font-size: 20px;
+	letter-spacing: 0.5px;
+	font-weight: 400;
+}
+.form-check.default_assist {
+	margin-top: 30px;
+}
+
+.pretty .state label::before{
+top: 0px !important;
+}
+.pretty .state label::after {
+	top: 0 !important;
+}
+.pretty{padding-bottom: 15px;}
+
+.pretty .state label {
+	padding-left: 10px;
+}
+
+.pretty input:checked ~ .state.p-warning-o label::before, .pretty.p-toggle .state.p-warning-o label::before {
+	border-color: #3eb1e1 !important;
+}
+
+.pretty.p-default:not(.p-fill) input:checked ~ .state.p-warning-o label::after {
+	background-color: #3eb1e1 !important;
+}
+#datepicker .ui-state-default {
+	text-align: center !important;
+	padding: 15px !important;
+}
+#time_date_wrapper .col-md-6 {
+	margin-top: 30px !important;
+}
+#datepicker  .ui-state-active, .ui-widget-content .ui-state-active
+{
+border: 1px solid #3eb1e1 !important;
+background: #3eb1e1 !important;
+color: #ffffff !important;
+}
+#datepicker  widget-content .ui-state-active{
+border: 1px solid #003eff !important;
+background: #007fff !important;
+color: #ffffff !important;
+}
