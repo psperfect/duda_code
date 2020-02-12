@@ -9,7 +9,7 @@ $ch = curl_init($url);
 
 //setup request to send json via POST
 
-$payload = '{"name":"Treatment","fields":[{"name":"traetment_name","type":"text"},{"name":"category","type":"text"}]}';
+$payload = '{"name":"buses","fields":[{"name":"traetment_name","type":"text"},{"name":"category","type":"text"}]}';
 
 //attach encoded JSON string to the POST fields
 

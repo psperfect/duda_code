@@ -1,35 +1,25 @@
 <?php
-// Initialize the session
-session_start();
- 
-// Check if the user is already logged in, if yes then redirect him to welcome page
-if(isset($_SESSION["loggedin"]) && $_SESSION["loggedin"] === true){
-  header("location: welcome.php");
-  exit;
-}
- 
+
+
+header('Access-Control-Allow-Origin: *'); 
 // Include config file
 require_once "config.php";
  
-// Define variables and initialize with empty values
-$username = $password = "";
-$username_err = $password_err = "";
- 
-// Processing form data when form is submitted
-if($_SERVER["REQUEST_METHOD"] == "POST"){
+
+if($_SERVER["REQUEST_METHOD"] == "GET"){
  
     // Check if username is empty
-    if(empty(trim($_POST["username"]))){
+    if(empty(trim($_REQUEST["username"]))){
         $username_err = "Please enter username.";
     } else{
-        $username = trim($_POST["username"]);
+        $username = trim($_REQUEST["username"]);
     }
     
     // Check if password is empty
-    if(empty(trim($_POST["password"]))){
+    if(empty(trim($_REQUEST["password"]))){
         $password_err = "Please enter your password.";
     } else{
-        $password = trim($_POST["password"]);
+        $password = trim($_REQUEST["password"]);
     }
     
     // Validate credentials
@@ -54,28 +44,32 @@ if($_SERVER["REQUEST_METHOD"] == "POST"){
                     // Bind result variables
                     mysqli_stmt_bind_result($stmt, $id, $username, $hashed_password);
                     if(mysqli_stmt_fetch($stmt)){
-                        if(password_verify($password, $hashed_password)){
+                        
+                        if($password==$hashed_password){
                             // Password is correct, so start a new session
                             session_start();
-                            
+                            $data=array();
                             // Store data in session variables
-                            $_SESSION["loggedin"] = true;
-                            $_SESSION["id"] = $id;
-                            $_SESSION["username"] = $username;                            
-                            
+                            $data["loggedin"] = true;
+                            $data["id"] = $id;
+                            $data["username"] = $username;                            
+                            echo json_encode($data) ; die;
                             // Redirect user to welcome page
                             header("location: welcome.php");
                         } else{
                             // Display an error message if password is not valid
-                            $password_err = "The password you entered was not valid.";
+                          echo   $password_err = "The password you entered was not valid.";
+                          die;
                         }
                     }
                 } else{
                     // Display an error message if username doesn't exist
-                    $username_err = "No account found with that username.";
+                  echo  $username_err = "No account found with that username.";
+                  die;
                 }
             } else{
                 echo "Oops! Something went wrong. Please try again later.";
+                die;
             }
         }
         
